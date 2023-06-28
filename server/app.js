@@ -17,9 +17,11 @@ app.use("/api/blog", blogRouter);
 const PORT = process.env.PORT || 8000;
 
 mongoose
-  .connect(process.env.DATABASE_URL)
+  .connect("mongodb://localhost:27017/Blog-Site")
   .then(() => app.listen(PORT))
   .then(() =>
     console.log(`Connected To Database and listening at PORT ${PORT}`)
   )
   .catch((err) => console.log(err));
+
+  

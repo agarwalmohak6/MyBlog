@@ -68,9 +68,10 @@ const Blog = ({ title, content, image, userName, isUser, id }) => {
         />
         <CardMedia
           component="img"
-          height="194"
+          height="100%"
+          width={"100%"}
           image={image}
-          alt="Paella dish"
+          alt="Unable to load image"
         />
         <CardContent>
           <hr />
